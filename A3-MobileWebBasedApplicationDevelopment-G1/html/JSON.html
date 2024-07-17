@@ -19,7 +19,7 @@
         <div><a href="ArraysInJavascript.html">Arrays</a></div>
         <div><a href="Functions.html">Functions</a></div>
         <div><a href="ArrowFunctions.html">Arrow Function</a></div>
-        <div><a href="QuerySelector.html">Selector</a></div>
+        <div><a href="QuerySelector.html">Query Selector</a></div>
         <div><a href="JSON.html">JSON</a></div>
 
 
@@ -33,6 +33,16 @@
                 <a href="#JSON">
                     <p class="link">JSON</p>
                 </a>
+
+                <a href="#LocalStorage">
+                    <p class="link">Local Storage</p>
+                </a>
+                <a href="#AJAX">
+                    <p class="link">AJAX</p>
+                </a>
+                <a href="#FetchAPI">
+                    <p class="link">Fetch API</p>
+                </a>
     
         
             </div>
@@ -43,10 +53,137 @@
                     <div class="content">
                         JSON (JavaScript Object Notation) is a lightweight data-interchange format that is
                         easy for humans to read and write and easy for machines to parse and generate. It
-                        is widely used for data exchange in web applications and APIs.
+                        is widely used for data exchange in web applications and APIs.<br><br>
+
+                    
+
+                    <strong>
+                    <div>
+                        Benefits:<br>
+                    </div>
+                    </strong>
+
+                    <ul>
+                        <li>Human-Readable: Easy for humans to understand and write.</li>
+                        <li>Language Independent: Can be used with many programming languages.</li>
+                        <li>Lightweight: Less verbose than XML, making it faster to transmit.</li>
+                        <li>JSON Object Example:<br><br></li>
+                        <img src="../resources/image.png">
+                    </ul>
+
                     </div>
                 </div>
                 
+                
+                <div id="program-example">
+                    <h4>Program Examples</h4>
+                    <div class="content">
+                        <p id="programExample">
+                            <img src="../resources/querySelector.png" alt="200" width="80%">
+                            <br>
+                            <img src="../resources/querySelector2.png" alt="200" width="80%" >
+                        <h4>Output:</h4>
+                        <img src="../resources/output1.png" alt="200" width="30%">
+                        <br>
+                        <img src="../resources/output2.png" alt="200" width="30%">
+                    </div>
+                </div>
+
+                <div id="LocalStorage">
+                    <h2>Local Storage</h2>
+                    <div class="content">
+                    Local Storage is a web storage mechanism that allows web applications to store data locally within the user's browser. It provides a way to persist data across sessions without needing to interact with the server, making it useful for storing small amounts of data such as user preferences, settings, and simple state information.<br><br>
+                    <strong>
+                            <div>
+                                Benefits:<br>
+                            </div>
+                            </strong>
+        
+                            <ul>
+                                <li>Simplicity: Easy to use with straightforward methods for storing and retrieving data.</li>
+                                <li>No Expiration: Unlike cookies, data in Local Storage does not expire unless explicitly removed.</li>
+                                <li>Persistence: Data remains available across browser sessions.</li>
+                            </ul> 
+                            <h3>Usage:</h3>
+                            <ul>
+                                <li>localStorage.setItem(key, value) <br>
+                                    -> saves the state (for key/value pair)</li><br>
+                                <li>localStorage.getItem(key) <br>
+                                    -> retrieves a saved state (for key/value pair)
+                                    </li> <br>
+                                <li>localStorage.removeItem(key) <br>
+                                    -> removes an entry (for key/value pair)
+                                    </li> <br>
+                                <li>localStorage.clear <br>
+                                    -> clears all local storage
+                                </li> <br>
+                            </ul>   
+                    </div>
+                </div>
+
+                <div id="program-example">
+                    <h4>Program Examples</h4>
+                    <div class="content">
+                        <p id="programExample">
+                            <img src="../resources/querySelector.png" alt="200" width="80%">
+                            <br>
+                            <img src="../resources/querySelector2.png" alt="200" width="80%" >
+                        <h4>Output:</h4>
+                        <img src="../resources/output1.png" alt="200" width="30%">
+                        <br>
+                        <img src="../resources/output2.png" alt="200" width="30%">
+                    </div>
+                </div>
+
+                <div id="AJAX">
+                    <h2>AJAX (Asynchronous JavaScript And XML)</h2>
+                    <div class="content">
+                        AJAX (Asynchronous JavaScript and XML) is a technique used in web development to create dynamic and interactive web applications. It allows web pages to be updated asynchronously by exchanging small amounts of data with the server behind the scenes, without reloading the entire page. This results in a more responsive and faster user experience.<br><br>
+                        <strong>
+                            <div>
+                                Benefits:<br>
+                            </div>
+                            </strong>
+        
+                            <ul>
+                                <li>Improved User Experience: Web pages can be updated without full page reloads, leading to faster interactions.</li>
+                                <li>Reduced Server Load: Only necessary data is sent and received, reducing the amount of data transferred and server load.</li>
+                            </ul>
+                    </div>
+                </div>
+
+                <div id="program-example">
+                    <h4>Program Examples</h4>
+                    <div class="content">
+                        <p id="programExample">
+                            <img src="../resources/querySelector.png" alt="200" width="80%">
+                            <br>
+                            <img src="../resources/querySelector2.png" alt="200" width="80%" >
+                        <h4>Output:</h4>
+                        <img src="../resources/output1.png" alt="200" width="30%">
+                        <br>
+                        <img src="../resources/output2.png" alt="200" width="30%">
+                    </div>
+                </div>
+
+                <div id="FetchAPI">
+                    <h2>Fetch API</h2>
+                    <div class="content">
+                        The Fetch API is a modern web API for making HTTP requests to servers from web browsers. It provides a more powerful and flexible feature set than the older XMLHttpRequest, allowing for easier and more readable asynchronous code, especially when combined with promises and async/await.<br><br>
+                        <strong>
+                            <div>
+                                Benefits:<br>
+                            </div>
+                            </strong>
+        
+                            <ul>
+                                <li>Simpler API: Easier to use than XMLHttpRequest.</li>
+                                <li>Better Error Handling: More straightforward handling of errors and responses.</li>
+                                <li>Streamlined Asynchronous Code: Works well with promises and async/await, resulting in cleaner and more maintainable code.</li>
+                            </ul>
+                    </div>
+                </div>
+
                 <div id="program-example">
                     <h4>Program Examples</h4>
                     <div class="content">
