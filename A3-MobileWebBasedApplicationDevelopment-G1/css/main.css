@@ -1,0 +1,134 @@
+body, h2, p, a, div {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #009dff;
+    color: #ffffff;
+    padding: 20px;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.title h2 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.main-body {
+    display: flex;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+/* .navigation {
+    width: 220px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navigation .button {
+    background-color: #4CAF50;
+    color: #ffffff;
+    padding: 12px;
+    margin-bottom: 12px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.navigation .button:hover {
+    background-color: #45a049;
+} */
+
+.contents {
+    flex: 1;
+    margin-left: 25px;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.quick-links {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-right: 25px;
+    width: 180px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.quick-links .link {
+    color: #4CAF50;
+    text-decoration: none;
+    margin-bottom: 12px;
+    display: block;
+    font-size: 1.1em;
+}
+
+.quick-links .link:hover {
+    text-decoration: underline;
+}
+.quick-links img{
+width: 170px;
+height: 180px;
+}
+
+.content {
+    margin-top: 25px;
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 1.6em;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 5px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #333;
+    border-top: 2px solid #e0e0e0;
+    border-radius: 10px;
+    width: 100%;
+}
+
+a:hover
+{
+    cursor: pointer;
+    text-decoration: underline;
+    color: cyan;
+
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}

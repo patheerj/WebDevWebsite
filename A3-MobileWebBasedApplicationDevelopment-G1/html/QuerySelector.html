@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/Javascript" src="../scripts/javascript.js"></script>
+    <link rel="stylesheet" href="../css/javascript.css">
+    <title>Javascript</title>
+</head>
+
+<body>
+    <div class="header">
+
+        <div id="logo"><img src="../resources/Coding.png" alt="100" height="100"></div>
+        <div><a class="active" href="../index.html">Home</a></div>
+        <div><a href="DOMInJavaScript.html">Document Object Model</a></div>
+        <div><a href="DataTypesInJavaScript.html">Data Types</a></div>
+        <div><a href="ArraysInJavascript.html">Arrays</a></div>
+        <div><a href="Functions.html">Functions</a></div>
+        <div><a href="ArrowFunctions.html">Arrow Function</a></div>
+        <div><a href="QuerySelector.html">Selector</a></div>
+        <div><a href="JSON.html">JSON</a></div>
+
+
+    </div>
+
+    <div class="main-body">
+
+        <div class="contents" style="display: flex;">
+            <div class="quick-links">
+
+                <a href="#QuerySelector">
+                    <p class="link">Query Selector</p>
+                </a>
+                <a href="#QuerySelectorAll">
+                    <p class="link">QuerySelectorAll</p>
+                </a>
+                <a href="#GetElementById">
+                    <p class="link">GetElementById</p>
+                </a>
+                <a href="#GetElementByClassName">
+                    <p class="link">GetElementByClassName</p>
+                </a>
+                <a href="#GetElementByName">
+                    <p class="link">GetElementByName</p>
+                    
+                </a>
+                <a href="#GetElementByTagName">
+                    <p class="link">GetElementByTagName</p>
+                    
+                </a>
+                <a href="#dfNodeListHtmlColl">
+                    <p class="link">Difference between Nodelist and HTML collection</p>
+                    
+                </a>
+            </div>
+            <div>
+            
+                <div id="QuerySelector">
+                    <h2>Query Selector</h2>
+                    <div class="content">
+                        QuerySelector and querySelectorAll are methods used to retrieve elements from the DOM using CSS
+                        selectors. querySelector returns the first matching element, while querySelectorAll returns all
+                        matching elements as a static NodeList.
+                    </div>
+                </div>
+                <div id="querySelector">
+                    <h3>QuerySelector</h3>
+                    <div class="content">
+                        The querySelector method is a JavaScript function used to select the first element within the
+                        document that matches a specified CSS selector. This method is part of the Document interface
+                        and allows for powerful and flexible selection of elements using CSS syntax.
+
+                    </div>
+                </div>
+                <div id="program-example">
+                    <h4>Program Examples</h4>
+                    <div class="content">
+                        <p id="programExample">
+                            <img src="../resources/querySelector.png" alt="200" width="80%">
+                            <br>
+                            <img src="../resources/querySelector2.png" alt="200" width="80%" >
+                        <h4>Output:</h4>
+                        <img src="../resources/output1.png" alt="200" width="30%">
+                        <br>
+                        <img src="../resources/output2.png" alt="200" width="30%">
+
+                        <ul>
+                            <li>
+                                In this example we make use of a button labeled button to bring about change on heading
+                                h1.
+                            </li>
+                            <li>
+                                We do this with the help of query selector in a JavaScript function. </li>
+                            <li>
+                                The syntax is document.querySelector(“”);
+                            </li>
+                            <li>
+                                We write the name of element needed to be extracted inside quotations.
+                            </li>
+                            <li>
+                                This node list element is further used with style.color to change its color to red.
+                            </li>
+                            <li>
+                                Query Selector only outputs the first matching element thus we could directly use
+                                style.color after the query. This might not be the case in querySelectorAll().
+                            </li>
+                        </ul>
+                        <h4>To get nth child of element:</h4>
+                        <img src="../resources/querySelectorall.png" alt="200" width="80%">
+                        <br>
+                        <img src="../resources/querySelectorall2.png" alt="200" width="80%">
+                        <h3>Output:</h3>
+                        <img src="../resources/qsoutput.png" alt="200" width="30%">
+                        <br>
+                        <img src="../resources/qsoutput2.png" alt="200" width="30%">
+
+                        </p>
+                    </div>
+                </div>
+
+                <div id="QuerySelectorAll">
+                    <h3>QuerySelectorAll</h3>
+                    <div class="content">
+                        The querySelectorAll method is a JavaScript function used to select all elements within the
+                        document that match a specified CSS selector. This method is part of the Document interface and
+                        returns a static NodeList containing all the matched elements.
+                    </div>
+                </div>
+                <div id="program-example">
+                    <h4>Program Examples</h4>
+                    <div class="content">
+                        <p id="programExample">
+                            <img src="../resources/qsall1.png" alt="200" width="80%">
+                            <br>
+                            <img src="../resources/qsall2.png" alt="200" width="80%">
+                        <h4>Output:</h4>
+                        <img src="../resources/qsallout.png" alt="200" width="30%">
+                        <br>
+                        <img src="../resources/qsallout2.png" alt="200" width="30%">
+                        <h4>Explanation</h4>
+                        <ul>
+                            <li>
+                                In this example we made use of Button named as Button. </li>
+                            <li>
+                                Upon clicking this button, the nth child in this case, the 2nd child element of h1’s
+                                color is to be changed
+                            <li>
+                                the syntax is like the previous one the only difference is we are mentioning here the
+                                nth child element</li>
+                        </ul>
+                        <h4>Key Differences:</h4>
+                        <li>
+                            Return Type: </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                querySelector: Returns the first matching element or null if no matches are found.
+                            </li>
+                            <li>
+                                querySelectorAll: Returns a static NodeList of all matching elements.
+                            </li>
+                        </ul>
+
+                        <li>
+                            Usage:</li>
+                        </ul>
+                        <ul>
+                            <li>
+                                querySelector: Used when you need to select a single element. </li>
+                            <li>
+                                querySelectorAll: Used when you need to select multiple elements. </li>
+                        </ul>
+                        <h4><b> We can use these selectors by</b></h4>
+                        <div>
+                            <h4>Tag Name</h4>
+                            <p>Tag name is used to select all elements of a specific type.</p>
+                            <p><strong>Usage:</strong> Useful when you want to access all instances of a particular HTML
+                                tag (e.g., all &lt;div&gt; or &lt;p&gt; elements) on a web page. This is common when
+                                styling or applying changes to all elements of a particular type.</p>
+                        </div>
+                        <div>
+                            <h4>Class Name</h4>
+                            <p>Class name is used to select all elements with that class. Class names are used to group
+                                elements and apply CSS styles or JavaScript behaviors to them. Multiple elements can
+                                share the same class name, making it a powerful tool for styling and scripting.</p>
+                            <p><strong>Usage:</strong> Mainly used for selecting and manipulating elements that share a
+                                common class attribute. This is often used in scenarios where you want to apply styles
+                                or JavaScript actions to a group of elements that are functionally related.</p>
+                        </div>
+                        <div>
+                            <h4>ID</h4>
+                            <p>ID is used to select an element with a specific ID. Each ID must be unique within the
+                                document, meaning no two elements can share the same ID.</p>
+                            <p><strong>Usage:</strong> IDs are meant to be unique within a document, so this method is
+                                used when you need to interact with a specific element.</p>
+                        </div>
+                        </p>
+
+
+                        <p id="programExample">
+                            <img src="../resources/all1.png" alt="200" width="80%">
+                            <br>
+                            <img src="../resources/all2.png" alt="200" width="80%">
+                        <h4>Output:</h4>
+                        <img src="../resources/out1.png" alt="200" width="30%">
+                        <br>
+                        <img src="../resources/out2.png" alt="200" width="30%">
+                        <h4>Explanation</h4>
+                        <ul>
+                            <li>
+                                In this code we made use of querySelector by using it on specific ids and classes where
+                                we want to implement the change after clicking on button called Button as label
+                            </li>
+                        </ul>
+                        <br>
+                        <div id="OtherSelectors">
+                            <h2>Other Selectors</h2>
+
+                            <div id="GetElementById">
+                                <h3>GetElementById()</h3>
+                                <div class="content">
+                                    The getElementById method is a fundamental feature of JavaScript for interacting
+                                    with
+                                    web page elements. As part of the DOM, it provides a straightforward way to select
+                                    elements by their unique IDs, which is crucial for performing operations such as
+                                    modifying content, styles, or attributes. This capability is essential for building
+                                    dynamic and interactive web applications.
+                                    <br><br>
+                                    The getElementById method is highly versatile in web development. By calling this
+                                    method
+                                    with the ID of an element, you retrieve a direct reference to that element, allowing
+                                    for
+                                    various manipulations. You can update the inner HTML to change the displayed
+                                    content,
+                                    modify CSS properties dynamically, attach event listeners for responsive
+                                    interactions,
+                                    and manage attributes effortlessly. This makes getElementById a powerful tool for
+                                    developing dynamic web applications.
+
+                                </div>
+                                <div class="content">
+                                    <p id="programExample">
+                                    <h4>Program Examples</h4>
+                                    <img src="../resources/id1.png" alt="200" width="80%">
+                                    <h4>Output:</h4>
+                                    <img src="../resources/id2.png" alt="200" width="30%">
+                                    <h4>Explanation</h4>
+                                    <ul>
+                                        <li>
+                                            This HTML code demonstrates using getElementById to select and manipulate an
+                                            element by its ID. It includes an h1 heading with the ID "demo" and a
+                                            subheading
+                                            h2. The JavaScript script selects the h1 element using
+                                            document.getElementById("demo") and changes its text color to red by setting
+                                            myElement.style.color = "red";. This example shows how to select an element
+                                            by
+                                            its ID and modify its style.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <br>
+                            <div id="GetElementByClassName">
+                                <h3>GetElementByClassName()</h3>
+                                <div class="content">
+                                    The getElementsByClassName method of Document interface returns an array-like object
+                                    of all child elements which have all the given class name(s).
+                                    <br><br>
+                                    When called on the document object, the complete document is searched, including the
+                                    root node. You may also call getElementsByClassName() on any element; it will return
+                                    only elements which are descendants of the specified root element with the given
+                                    class name(s).
+
+
+                                </div>
+                                <div class="content">
+                                    <p id="programExample">
+                                    <h4>Program Examples</h4>
+                                    <img src="../resources/cs1.png" alt="200" width="80%">
+                                    <h4>Output:</h4>
+                                    <h4>Output before clicking on change button</h4>
+                                    <img src="../resources/cs2.png" alt="200" width="45%">
+                                    <h4>Output After clicking on change button</h4>
+                                    <img src="../resources/cs3.png" alt="200" width="45%">
+                                    <h4>Explanation</h4>
+                                    <ul>
+                                        <li>
+                                            This HTML code demonstrates using getElementsByClassName to select and
+                                            manipulate elements by their class name. The document includes an unordered
+                                            list with the class "example" and two list items with the class "child",
+                                            along with a "Change" button.
+                                            When the "Change" button is clicked, the myFunction() JavaScript function
+                                            runs. It first selects the ul element with the class "example" and then the
+                                            first li element with the class "child" within this ul. The function then
+                                            changes the text of this list item from "Coffee" to "Milk" by setting its
+                                            innerHTML property.
+
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <br>
+                            <div id="GetElementByName">
+                                <h3>GetElementByName()</h3>
+                                <div class="content">
+                                    The getElementsByName method is a part of the DOM in JavaScript, essential for
+                                    interacting with multiple web page elements that share the same name attribute. This
+                                    method returns a NodeList of elements, which can be iterated over for batch
+                                    operations like form handling or updating multiple inputs. Its ability to target
+                                    elements by name is crucial for tasks that require manipulating groups of elements
+                                    efficiently. <br><br>
+                                    The getElementsByName method is particularly useful in web development for handling
+                                    multiple elements that share the same name attribute. By calling this method, you
+                                    receive a NodeList of matching elements, which can be manipulated in bulk. This is
+                                    especially helpful in form processing, where you might need to update, validate, or
+                                    interact with several input fields simultaneously. The ability to target elements by
+                                    name streamlines operations that involve groups of elements, enhancing efficiency
+                                    and consistency in dynamic web applications.
+
+                                </div>
+                                <div class="content">
+                                    <p id="programExample">
+                                    <h4>Program Examples</h4>
+                                    <img src="../resources/n1.png" alt="200" width="80%">
+                                    <h4>Output:</h4>
+                                    <img src="../resources/n2.png" alt="200" width="70%">
+                                    <h4>Explanation</h4>
+                                    <ul>
+                                        <li>
+                                            This HTML code shows how to use the document.getElementsByName method to
+                                            select and manipulate elements with the same name attribute. The document
+                                            contains two checkboxes named "animal". The JavaScript code selects all
+                                            elements with this name using document.getElementsByName("animal"),
+                                            resulting in a NodeList.
+
+                                        </li>
+                                        <li>
+                                            A for loop iterates over this NodeList, checking if each element is a
+                                            checkbox (type == "checkbox"). If it is, the script sets its checked
+                                            property to true, marking all checkboxes as checked.This example
+                                            demonstrates selecting multiple elements by name and performing batch
+                                            operations on them.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div id="GetElementByTagName">
+                                <h3>GetElementByTagName()</h3>
+                                <div class="content">
+                                    The getElementsByTagName method is a fundamental part of the DOM in JavaScript,
+                                    essential for selecting groups of elements by their tag names. This method returns a
+                                    live HTMLCollection of elements, allowing developers to iterate over and manipulate
+                                    these elements as needed. It is particularly useful for tasks requiring batch
+                                    operations on elements, such as updating all paragraphs or headings in a document.
+                                    <br><br>
+
+                                    The getElementsByTagName method is highly versatile for web development tasks that
+                                    involve selecting multiple elements by their tag name. By calling this method, you
+                                    obtain a live HTMLCollection of elements that can be manipulated collectively. This
+                                    capability is especially useful for updating, styling, or performing other batch
+                                    operations on elements like paragraphs, divs, or headings. The method enhances
+                                    efficiency and consistency when handling groups of elements in dynamic web
+                                    applications.
+                                </div>
+                                <div class="content">
+                                    <p id="programExample">
+                                    <h4>Program Examples</h4>
+                                    <img src="../resources/tg1.png" alt="200" width="80%">
+                                    <h4>Output:</h4>
+                                    <img src="../resources/tg2.png" alt="200" width="70%">
+                                    <h4>Explanation</h4>
+                                    <ul>
+                                        <li>
+                                            We have created an unordered list from which we can fetch the data from tag
+                                            name. We have created a p tag with id ‘demo’. Now, we have created a
+                                            collection in script which will fetch the element by tag name ‘li’. Now, the
+                                            elements which is fetched is stored in p tag with demo as an 'id'. By this
+                                            example, we have used tagname to show data.
+
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <p id="programExample">
+                                <h4>Program Examples</h4>
+                                <img src="../resources/tg1.png" alt="200" width="80%">
+                                <h4>Output:</h4>
+                                <img src="../resources/tg2.png" alt="200" width="70%">
+                                <h4>Explanation</h4>
+                                <ul>
+                                    <li>
+                                        We have created an unordered list from which we can fetch the data from tag
+                                        name. We have created a p tag with id ‘demo’. Now, we have created a
+                                        collection in script which will fetch the element by tag name ‘li’. Now, the
+                                        elements which is fetched is stored in p tag with demo as an 'id'. By this
+                                        example, we have used tagname to show data.
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div id="dfNodeListHtmlColl">
+                            <h4>Difference between Nodelist and HTML collection.</h4>
+                            <div class="content">
+                                <ul>
+                                    <li>
+                                       <p>A NodeList is a collection of nodes, typically returned by methods querying
+                                        the DOM. They are similar to arrays but lack some array methods.</p>
+                                    </li>
+                                    <li>
+                                        <p>HTML Collection is collection of HTML elements.</p>
+                                    </li>
+                                    <li>
+                                        <p>An HTMLCollection is always a live collection. That means when an element is
+                                        added to list in a DOM. The list in HTML Collection also changes whereas this is
+                                        not the case in Node List i.e. changes will not apply to list in Node List.</p>
+                                    </li>
+                                    <li>
+                                       <p> HTMLCollection items can be accessed by their name, id, or index number.
+                                        Whereas the node list can only be accessed by index.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>

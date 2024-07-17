@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/Javascript" src="../scripts/javascript.js"></script>
+    <link rel="stylesheet" href="../css/javascript.css">
+    <title>Javascript</title>
+</head>
+<body>
+    <div class="header">
+        <div id="logo"><img src="../resources/Coding.png" alt="100" height="100"></div>
+        <div><a class="active" href="../index.html">Home</a></div>
+        <div><a href="DOMInJavaScript.html">Document Object Model</a></div>
+        <div><a href="DataTypesInJavaScript.html">Data Types</a></div>
+        <div><a href="ArraysInJavascript.html">Arrays</a></div>
+        <div><a href="Functions.html">Functions</a></div>
+        <div><a href="ArrowFunctions.html">Arrow Function</a></div>
+        <div><a href="QuerySelector.html">Query Selector</a></div>
+        <div><a href="JSON.html">JSON</a></div>
+
+    </div>
+
+    <div class="main-body">
+
+    <div class="contents" style="display: flex;">
+        <div class="quick-links">
+            
+            <a href="#introduction"><p class="link" >Introduction</p></a>
+            <a href="#advantages"><p class="link">Advantages</p></a>
+            <a href="#disadvantages"><p class="link">Disadvantages</p></a>
+            <a href="#usages"><p class="link">Usages</p></a>
+            <a href="#program-example"><p class="link">Program-Example</p></a>
+        </div>
+        <div>
+            <div id="introduction">
+                <h2>Introduction</h2>
+                <div class="content">
+                    The Document Object Model which is also know as DOM is a programming interface especially for HTML, Javascript, XML and so on documents. It basically represents how the structure of a document in tree format which consists of objects that allows prgrams to dynamically access and update the content and style of the page. The DOM acts as a way for JavaScript to interact with the webpage
+                </div>
+            </div>
+            <div id="advantages">
+                <h2>Advantages</h2>
+                <div class="content">
+                    Advantages of DOM are 
+                    <ul id="advantagesOfDOM">
+                        <li> It enables content to dynamically update without page being able to reload 
+                        </li>
+                        <li> DOM also helps in enhancing the interactivity with the webpage by allowing the real time changes to the structure of the document which provides a standard way in order of access and manipulating the web pages accross multiple browsers
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="disadvantages">
+                <h2>Disadvantages</h2>
+                <div class="content">
+                    <ul id="disadvantagesOfDOM">
+                        <li>Manipulating the DOM can cause performance issues in large documents, frequent updates can cause the pages to slow down
+                        </li>
+                        <li> More complex the DOM is more harder it will be to maintain the code
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="usages">
+                <h2>Usages</h2>
+                <div class="content">
+                    <ul id="usageOfDOM">
+                        <li>
+                        DOM is used to create, modify and remove the elements and it also handles events like on click in HTML and it is also used to manipulate the CSS and Javascript
+                        </li>
+                        <li>
+                            DOM is fundamental while building an interactive web applications
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="program-example">
+                <h2>Program Examples</h2>
+                <div class="content">
+                    <p id="programExample">
+                        <img src="../resources/eg1DOM.png" alt="200" height="300">
+                        <ul>
+                            <li>
+                            The above code explains how the DOM structure is worked and interacted in Javascript. This code will get the element whose id is "Demo" and change the content of it as "Hello World" 
+                            </li>
+                            <li>
+                                After changing the content of "Demo" it will create a new element as p and set the content of p element as "This is new paragraph"
+                            </li>
+                            <li>
+                                Once the new element is created and its content is changed it will than append the element in DOM document tree as a child
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+   <div class="footer">
+    © Assignment1 Group 1 Mobile Web-Based App Development
+   </div>
+
+</body>
+</html>
