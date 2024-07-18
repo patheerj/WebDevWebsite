@@ -55,8 +55,6 @@
                         easy for humans to read and write and easy for machines to parse and generate. It
                         is widely used for data exchange in web applications and APIs.<br><br>
 
-                    
-
                     <strong>
                     <div>
                         Benefits:<br>
@@ -79,13 +77,17 @@
                     <h4>Program Examples</h4>
                     <div class="content">
                         <p id="programExample">
-                            <img src="../resources/querySelector.png" alt="200" width="80%">
+                            <img src="../resources/JSON.png" alt="200" width="60%">
                             <br>
-                            <img src="../resources/querySelector2.png" alt="200" width="80%" >
-                        <h4>Output:</h4>
-                        <img src="../resources/output1.png" alt="200" width="30%">
-                        <br>
-                        <img src="../resources/output2.png" alt="200" width="30%">
+                            <ul>
+                                <li>let jsonData defines a string containting JSON data</li><br>
+                                <li>JSON.parse(jsonData) takes the string containing json Data, parses it and outputs in terms of object.</li><br>
+                                <li>You can access these properties using their key pairs.</li><br>
+                                <li>In this example, we find it using obj object that has JSON Data stores and then calling it using (".") operator. it will return proper data if it has singular data.</li><br>
+                                <li>To find data containing an array we use second example where it is called by specifying the element index in array. Like we did here with obj.courses[1]</li><br>
+                                <li>Lastly we convert the object to JSON string using stringify method that takes object as parameter.</li><br>
+                            </ul>
+                        </p>
                     </div>
                 </div>
 
@@ -125,14 +127,17 @@
                     <h4>Program Examples</h4>
                     <div class="content">
                         <p id="programExample">
-                            <img src="../resources/querySelector.png" alt="200" width="80%">
+                            <img src="../resources/LocalStorage.png" alt="200" width="50%">
                             <br>
-                            <img src="../resources/querySelector2.png" alt="200" width="80%" >
-                        <h4>Output:</h4>
-                        <img src="../resources/output1.png" alt="200" width="30%">
-                        <br>
-                        <img src="../resources/output2.png" alt="200" width="30%">
-                    </div>
+                            <ul>
+                                <li>Here we first defined three variables with specific values, we want to store these into local storage.</li><br>
+                                <li>We make use of setItem method of LocalStorage to save the data as key value pairs. first parameter is the key and second is the value to be stored.</li><br>
+                                <li>To retrieve information from storage we use getItem method of localStorage with parameter as the key of value to be retrieved.</li><br>
+                                <li>We can remove an item using removeItem method, as in the example studProg is being removed by this method from localStorage. </li><br>
+                                <li>In order to clear all of the Local storage we use .clear() after localStorage class.</li><br>
+                            </ul>
+                        </p>
+                        </div>
                 </div>
 
                 <div id="AJAX">
@@ -156,13 +161,20 @@
                     <h4>Program Examples</h4>
                     <div class="content">
                         <p id="programExample">
-                            <img src="../resources/querySelector.png" alt="200" width="80%">
+                            <img src="../resources/AJAX.png" alt="200" width="60%">
                             <br>
-                            <img src="../resources/querySelector2.png" alt="200" width="80%" >
-                        <h4>Output:</h4>
-                        <img src="../resources/output1.png" alt="200" width="30%">
-                        <br>
-                        <img src="../resources/output2.png" alt="200" width="30%">
+                            <ul>
+                                <li>XMLHttpRequest class is used to make a new http request.</li><br>
+                                <li>We use .open methof of XMLHttpRequest class with three parameters to create an asynchronous request.</li><br>
+                                <li>First parameter is type of HTTP request to be constructed, second specifies the URL from where data is stored, thrid boolean parameter true indicates asynchronous request.</li><br>
+                                <li>.send method sends the request to the server.</li><br>
+                                <li>.onload defines the behaviour of website when it releods</li><br>
+                                <li>Checking if the status code is 200 or not</li><br>
+                                <li>this.responseText gets the response and stores it into data.</li><br>
+                                <li>To further convert it into JSON we use parse method of JSON class</li><br>
+                                <li>Lastly, the title is displayed in element with ID dataDisplay.</li>
+                            </ul>
+                        </p>
                     </div>
                 </div>
 
@@ -188,21 +200,22 @@
                     <h4>Program Examples</h4>
                     <div class="content">
                         <p id="programExample">
-                            <img src="../resources/querySelector.png" alt="200" width="80%">
+                            <img src="../resources/FetchAPI.png" alt="200" width="80%">
                             <br>
-                            <img src="../resources/querySelector2.png" alt="200" width="80%" >
-                        <h4>Output:</h4>
-                        <img src="../resources/output1.png" alt="200" width="30%">
-                        <br>
-                        <img src="../resources/output2.png" alt="200" width="30%">
+                            <ul>
+                                <li>inside fetch we place the URL to the data to be fetched.</li><br>
+                                <li>.then is used to have arrow function for response.</li><br>
+                                <li>If it returns a response OK,then it parses the response as json orelse it throws an error.</li><br>
+                                <li>Error handling is done by catch block that comes at the last of the sequence.</li><br>
+                                <li>the next then block handles the parsed json data and stores into dataJSON.</li><br>
+                                <li>To print the data to screen ${} are used, they contain the appropriate key succeseded by the object where data is stored.</li>
+
+                            </ul>
+                        </p>
                     </div>
                 </div>
 
                 
-
-
-
-
 </body>
 
 </html>
