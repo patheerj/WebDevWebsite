@@ -25,6 +25,9 @@
     <div class="main-body">
         <div class="contents" style="display: flex;">
             <div class="quick-links">
+                <a href="#Introduction">
+                    <p class="link">Introduction</p>
+                </a>
                 <a href="#Component">
                     <p class="link">Component</p>
                 </a>
@@ -33,6 +36,25 @@
                 </a>
             </div>
             <div>
+                <br>
+                <div id="Introduction">
+                    <h2>Angular</h2>
+                    <div class="content">
+                        <ul>
+                            <li>AngularJS is a framework built with JavaScript. Using the &lt;script&gt; tag, it can be included in an HTML document.</li>
+                            <li>AngularJS expands HTML attributes with Directives and uses Expressions to connect data to HTML.</li>
+                            <li>AngularJS is delivered as a JavaScript file, and it may be inserted into a web page using the script tag.</li>
+                            <li>Every Angular component must have:
+                                <ul>
+                                    <li>A TypeScript class with behaviors such as handling user input and fetching data from a server.</li>
+                                    <li>An HTML template that controls what renders into the DOM.</li>
+                                    <li>A CSS selector that defines how the component is used in HTML.</li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
                 <br>
                 <div id="Component">
                     <h2>Component</h2>
@@ -90,6 +112,14 @@
                                 <li>This is the structural organization of the app using components.</li>
                                 <li>In component.ts files, the decorator @Component defines that the class is a component.</li>
                                 <li>Services are injected through import at top of the page. Here we imported Component from location ‘@angular/core’.</li>
+
+                                <br>
+                                <li><strong>@Component Decorator:</strong> This is a special decorator that marks the class as an Angular component. It includes metadata such as the selector, templateUrl, and styleUrls.</li>
+                                <li><strong>Selector:</strong> This is the custom HTML tag that represents the component. In this case, <code>&lt;app-course&gt;&lt;/app-course&gt;</code> will be used to render the CourseComponent in another component's template.</li>
+                                <li><strong>TemplateUrl:</strong> Specifies the path to the HTML file that defines the component's view.</li>
+                                <li><strong>StyleUrls:</strong> Specifies the paths to CSS files that style the component's view.</li>
+                                <li><strong>Class Definition:</strong> The class contains properties and methods that define the component's logic. These can be used in the HTML template via data binding.</li>
+
                             </ul>
 
                             <h3>Output:</h3>
