@@ -33,11 +33,12 @@
                 </a>
             </div>
             <div>
+                <br>
                 <div id="Component">
-                    <h2>JSON</h2>
+                    <h2>Component</h2>
                     <div class="content">
                         <strong>
-                            <div>Description/Introduction</div>
+                            <div><h3>Description/Introduction</div></h3>
                         </strong>
                         <ul>
                             <li>Components are fundamental building block of Angular applications.</li>
@@ -50,7 +51,7 @@
                         </ul>
 
                         <strong>
-                            <div>Usage:</div>
+                            <div><h3>Usage:</h3></div>
                         </strong>
                         <ul>
                             <li>Components are useful for creating reusable and modular UI elements.</li>
@@ -65,7 +66,7 @@
                 </div>
 
                 <div id="program-example">
-                    <h4>Program Examples</h4>
+                    <h3>Program Examples</h3>
                     <div class="content">
                         <p id="programExample">
                             <img src="../resources/Component_1.png" alt="Component Example 1" width="60%">
@@ -85,13 +86,14 @@
                                 <li>Index.html displays the app component with directive <code>&lt;app-root&gt;&lt;/app-root&gt;</code>. The name of the directive inside angular bracket is decided by the name specified in selector when defining the component in app.component.ts file.</li>
                                 <li>Similarly, while defining the Course file, the selector name was app-course. To make course component visible, <code>&lt;app-course&gt;&lt;/app-course&gt;</code> tags are included in app.component.html file.</li>
                                 <br>
-                                <img src="../resources/ComponentStructure.png" alt="Component Table" width="60%">
+                                <img src="../resources/Component_table.png" alt="Component Table" width="60%">
                                 <li>This is the structural organization of the app using components.</li>
                                 <li>In component.ts files, the decorator @Component defines that the class is a component.</li>
                                 <li>Services are injected through import at top of the page. Here we imported Component from location ‘@angular/core’.</li>
                             </ul>
 
-                            <h4>Output:</h4>
+                            <h3>Output:</h3>
+                            <br>
                             <img src="../resources/Component_Output.png" alt="Component Output" width="60%">
                             <ul>
                                 <li>The output combines both course and school components and shows a list of relevant items on the screen in the order they are defined in the app.component.html file.</li>
@@ -99,12 +101,12 @@
                         </p>
                     </div>
                 </div>
-
+<br>
                 <div id="Routing">
                     <h2>Routing</h2>
                     <div class="content">
                         <strong>
-                            <div>Description/Introduction</div>
+                            <div><h3>Description/Introduction</h3></div>
                         </strong>
                         <ul>
                             <li>Routing in Angular allows navigation between different views or components within a single-page application (SPA). This means that instead of loading new pages from the server, Angular dynamically updates the view to show different components based on the current URL.</li>
@@ -114,7 +116,7 @@
                         </ul>
 
                         <strong>
-                            <div>Usage:</div>
+                            <div><h3>Usage:</h3></div>
                         </strong>
                         <ul>
                             <li>Routing is useful for creating SPAs (Single Page Applications) where different views are displayed without reloading the entire page. This approach provides a smoother and more responsive user experience compared to traditional multi-page applications.</li>
@@ -122,7 +124,7 @@
                             <li>The router enhances the user experience by providing smooth transitions between views and maintaining the application state. Users can navigate back and forth without losing their place or data in the application.</li>
                         </ul>
 
-                        <h4>Alternatives of Routing Approach</h4>
+                        <h3>Alternatives of Routing Approach</h3>
                         <ul>
                             <li>Hash-based navigation: Uses hash (#) in URLs for navigation, like http://example.com/#/view1.</li>
                             <li>localStorage.getItem(key) -> retrieves a saved state (for key/value pair)</li>
@@ -132,18 +134,18 @@
                 </div>
 
                 <div id="program-example">
-                    <h4>Program Examples</h4>
+                    <h3>Program Examples</h3>
                     <div class="content">
                         <p id="programExample">
                             <img src="../resources/Routing_Program.png" alt="Routing Program" width="50%">
                             <br><br>
                             <strong>
-                                <div>Output:</div>
+                                <div><h3>Output:</h3></div>
                             </strong>
                             <img src="../resources/Routing_Output.png" alt="Routing Output" width="50%">
                             <br>
                             <strong>
-                                <div>Code Explanation:</div>
+                                <div><h3>Code Explanation:</h3></div>
                             </strong>
                             <ul>
                                 <li>A routes array is defined, where each object contains the URL path for the route and the component that should be displayed when the path is accessed.</li>
