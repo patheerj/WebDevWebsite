@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/Angular.css">
+    <title>Javascript</title>
+</head>
+
+<body>
+    <div class="header">
+        <div id="logo"><img src="../resources/Coding.png" alt="Coding" height="100"></div>
+        <div><a class="active" href="../index.html">Home</a></div>
+        <div><a href="DOMInJavaScript.html">Document Object Model</a></div>
+        <div><a href="DataTypesInJavaScript.html">Data Types</a></div>
+        <div><a href="ArraysInJavascript.html">Arrays</a></div>
+        <div><a href="Functions.html">Functions</a></div>
+        <div><a href="ArrowFunctions.html">Arrow Function</a></div>
+        <div><a href="QuerySelector.html">Query Selector</a></div>
+        <div><a href="JSON.html">JSON</a></div>
+        <div><a href="Angular.html">Angular</a></div>
+    </div>
+
+    <div class="main-body">
+        <div class="contents" style="display: flex;">
+            <div class="quick-links">
+                <a href="#Component">
+                    <p class="link">Component</p>
+                </a>
+                <a href="#Routing">
+                    <p class="link">Routing</p>
+                </a>
+            </div>
+            <div>
+                <div id="Component">
+                    <h2>JSON</h2>
+                    <div class="content">
+                        <strong>
+                            <div>Description/Introduction</div>
+                        </strong>
+                        <ul>
+                            <li>Components are fundamental building block of Angular applications.</li>
+                            <li>Each component has its own .html, .css, and .ts files. .ts files contain the logic for code.</li>
+                            <li>They are blocks which help make code reusable and efficient.</li>
+                            <li>Components define views, uses services.</li>
+                            <li>Views are part of screen that Angular can select and alter according to program logic and data.</li>
+                            <li>Services provides specific functionality to the application. These service providers are injected into components as dependencies.</li>
+                            <li>Components and services are normal classes containing metadata in form of decorators which instruct angular on how to process them.</li>
+                        </ul>
+
+                        <strong>
+                            <div>Usage:</div>
+                        </strong>
+                        <ul>
+                            <li>Components are useful for creating reusable and modular UI elements.</li>
+                            <li>It Breaks down the application into smaller components for better manageability.</li>
+                            <li>Allows for separation of concerns, where each component is responsible for a specific part of the application.</li>
+                            <li>By using the Components approach it makes easier to develop, test and maintain the code.</li>
+                            <li>Best suited for encapsulating small, self-contained parts of the user interface (e.g., buttons, forms, widgets).</li>
+                            <li>Should not be used for shared logic across multiple components or non-UI functionalities.</li>
+                            <li>They are not useful if the content does not require interactivity or complex state management.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="program-example">
+                    <h4>Program Examples</h4>
+                    <div class="content">
+                        <p id="programExample">
+                            <img src="../resources/Component_1.png" alt="Component Example 1" width="60%">
+                            <br>
+                            <img src="../resources/Component_2.png" alt="Component Example 2" width="60%">
+                            <br>
+                            <img src="../resources/Component_3.png" alt="Component Example 3" width="60%">
+                            <br>
+                            <img src="../resources/Component_4.png" alt="Component Example 4" width="60%">
+                            <br>
+                            <img src="../resources/Component_5.png" alt="Component Example 5" width="60%">
+                            <br>
+                            <ul>
+                                <li>As seen in the above code files we have taken example of application that displays courses and Campuses. We require two components named Course and School inside the app component.</li>
+                                <li>Components can be made with terminal commands.</li>
+                                <li>ng generate component component-name OR ng g c component-name</li>
+                                <li>Index.html displays the app component with directive <code>&lt;app-root&gt;&lt;/app-root&gt;</code>. The name of the directive inside angular bracket is decided by the name specified in selector when defining the component in app.component.ts file.</li>
+                                <li>Similarly, while defining the Course file, the selector name was app-course. To make course component visible, <code>&lt;app-course&gt;&lt;/app-course&gt;</code> tags are included in app.component.html file.</li>
+                                <br>
+                                <img src="../resources/Component_table.png" alt="Component Table" width="60%">
+                                <li>This is the structural organization of the app using components.</li>
+                                <li>In component.ts files, the decorator @Component defines that the class is a component.</li>
+                                <li>Services are injected through import at top of the page. Here we imported Component from location ‘@angular/core’.</li>
+                            </ul>
+
+                            <h4>Output:</h4>
+                            <img src="../resources/Component_Output.png" alt="Component Output" width="60%">
+                            <ul>
+                                <li>The output combines both course and school components and shows a list of relevant items on the screen in the order they are defined in the app.component.html file.</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+
+                <div id="Routing">
+                    <h2>Routing</h2>
+                    <div class="content">
+                        <strong>
+                            <div>Description/Introduction</div>
+                        </strong>
+                        <ul>
+                            <li>Routing in Angular allows navigation between different views or components within a single-page application (SPA). This means that instead of loading new pages from the server, Angular dynamically updates the view to show different components based on the current URL.</li>
+                            <li>The Angular Router is the module that enables defining routes, associating them with components, and managing navigation and URL parameters. By configuring routes in your application, you can determine which component should be displayed when a user navigates to a specific URL.</li>
+                            <li>The router listens to the browser's address bar and navigates to the corresponding view based on the defined routes.</li>
+                            <li>Angular's router supports nested routes, allowing you to define routes within routes. This is useful for creating complex UIs where a parent component might have its own child routes.</li>
+                        </ul>
+
+                        <strong>
+                            <div>Usage:</div>
+                        </strong>
+                        <ul>
+                            <li>Routing is useful for creating SPAs (Single Page Applications) where different views are displayed without reloading the entire page. This approach provides a smoother and more responsive user experience compared to traditional multi-page applications.</li>
+                            <li>It helps in organizing the application into multiple views, each represented by a component. This makes the application modular and easier to manage, test, and maintain.</li>
+                            <li>The router enhances the user experience by providing smooth transitions between views and maintaining the application state. Users can navigate back and forth without losing their place or data in the application.</li>
+                        </ul>
+
+                        <h4>Alternatives of Routing Approach</h4>
+                        <ul>
+                            <li>Hash-based navigation: Uses hash (#) in URLs for navigation, like http://example.com/#/view1.</li>
+                            <li>localStorage.getItem(key) -> retrieves a saved state (for key/value pair)</li>
+                            <li>This approach is less common in modern SPAs (Single Page Applications) and is less SEO-friendly because search engines may not index content behind the hash.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="program-example">
+                    <h4>Program Examples</h4>
+                    <div class="content">
+                        <p id="programExample">
+                            <img src="../resources/Routing_Program.png" alt="Routing Program" width="50%">
+                            <br><br>
+                            <strong>
+                                <div>Output:</div>
+                            </strong>
+                            <img src="../resources/Routing_Output.png" alt="Routing Output" width="50%">
+                            <br>
+                            <strong>
+                                <div>Code Explanation:</div>
+                            </strong>
+                            <ul>
+                                <li>A routes array is defined, where each object contains the URL path for the route and the component that should be displayed when the path is accessed.</li>
+                                <li>RouterModule.forRoot(routes) is added to the imports array. This configures the router with the provided routes at the root level of the application.</li>
+                                <li>The forRoot() method sets up the router and initializes the application's routing based on the specified routes.</li>
+                                <li>By modifying the app.module.ts file to include routing configuration, you enable Angular's router to handle navigation within your application.</li>
+                                <li>When users navigate to different paths (URLs), the router dynamically loads and displays the corresponding components without reloading the entire page, creating a seamless and efficient single-page application experience.</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
